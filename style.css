@@ -17,6 +17,7 @@ header {
 
 ul {
 	padding: 0 20px;
+	display: flex;
 }
 
 li {
