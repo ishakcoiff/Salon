@@ -1,5 +1,5 @@
 body {
-	background: #FFD700;
+	background: #0D3052;
 	font-family: "Space Mono";
 	color: white;
 }
@@ -44,6 +44,6 @@ div {
 
 .tarif1 .tarif2 {
 	padding: 20px; 
-	background-color: #f4f4f4; 
+	background-color: #FFD700; 
 	border: 1px solid #ddd; 
 }
