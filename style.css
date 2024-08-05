@@ -38,7 +38,7 @@ div {
 
 .tarifs {
         display: grid; 
-	grid-template-columns: repeat(2, 1fr); 
+	grid-template-columns: repeat(1, 1fr); 
 	gap: 10px; 
 }
 
@@ -59,7 +59,7 @@ div {
 }
 
 input {
-	border-radius: 20%;
+	border-radius: 10%;
 	border: none;
 	
 }
