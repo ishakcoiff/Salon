@@ -42,7 +42,8 @@ div {
 	gap: 10px; 
 }
 
-.tarif1 .tarif2 {
+.tarif1,
+.tarif2 {
 	padding: 20px; 
 	background-color: #FFD700; 
 	border: 1px solid #ddd; 
