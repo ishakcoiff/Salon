@@ -48,3 +48,12 @@ div {
 	background-color: #FFD700; 
 	border: 1px solid #ddd; 
 }
+
+.avis {
+	text-align: center;
+}
+
+.commentaires {
+	display: flex;
+	align-items: center;
+}
