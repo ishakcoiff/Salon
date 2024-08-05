@@ -41,3 +41,9 @@ div {
 	grid-template-columns: repeat(2, 1fr); 
 	gap: 10px; 
 }
+
+.tarif1 .tarif2 {
+	padding: 20px; 
+	background-color: #f4f4f4; 
+	border: 1px solid #ddd; 
+}
