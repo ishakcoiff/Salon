@@ -1,77 +1,72 @@
-<!DOCTYPE HTML5>
-
-<html>
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="pics/icon.PNG"/>
-		<title>Ishak Coiff</title>
-	</head>
-	<body>
-		<header>
-			<img src="pics/logo.PNG" alt="Logo" class="logo"/>
-			<ul>
-				<li>Salon</li>
-				<li>Tarifs</li>
-				<li>Avis</li>
-				<li>Rendez-vous</li>
-			</ul>
-		</header>
-		<main>
-			<section>
-				<img src="pics/image-salon-1.png" alt="Image salon" />
-				<img src="pics/image-salon-2.png" alt="Image salon" />
-				<img src="pics/image-salon-3.png" alt="Image salon" />
-				<i></i>
-				<i></i>
-			</section>
-			<section class="tarifs">
-				<div class="tarif1">
-					<h2>Coupe à domicile</h2>
-					<p>Mulhouse ou alentours</p>
-					<span class="prix">10€</span>
-				</div>
-				<div class="tarif2">
-					<h2>Coupe sur place</h2>
-					<p>Adresse</p>
-					<span class="prix">5€</span>
-				</div>
-			</section>
-			<div>
-				<h3 class="avis">Avis des clients</h2>
-				<i></i>
-				<h3>John Doe</h3>
-				<p>Lorem ipsum dolor sit amet</p>
-			</div>
-			<section>
-				<h1>Prends rendez-vous</h1>
-
-				<div>
-					<form>
-						<input type="text" placeholder="Nom" class="nom" />
-						<input type="date" id="date" class="date" />
-						<input type="time" id="time" class="heure"/>
-						<input
-							type="radio"
-							id="surPlace"
-							name="lieu"
-							value="PLACE"
-						/><label for="surPlace">Sur place</label>
-						<input
-							type="radio"
-							id="aDomicile"
-							name="lieu"
-							value="DOMICILE"
-						/><label for="aDomicile">A domicile</label>
-						<button>Confirmer</button>
-					</form>
-				</div>
-			</section>
-		</main>
-	  <script src="script.js"></script>
-	</body>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/icon.PNG">
+    <title>Ishak Coiff</title>
+</head>
+<body>
+    <header>
+        <img src="pics/logo.PNG" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#salon">Salon</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#rendez-vous">Rendez-vous</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="salon">
+            <img src="pics/image-salon-1.png" alt="Image salon 1">
+            <img src="pics/image-salon-2.png" alt="Image salon 2">
+            <img src="pics/image-salon-3.png" alt="Image salon 3">
+        </section>
+        <section id="tarifs" class="tarifs">
+            <div class="tarif1">
+                <h2>Coupe à domicile</h2>
+                <p>Mulhouse ou alentours</p>
+                <span class="prix">10€</span>
+            </div>
+            <div class="tarif2">
+                <h2>Coupe sur place</h2>
+                <p>Adresse</p>
+                <span class="prix">5€</span>
+            </div>
+        </section>
+        <section id="avis">
+            <h3 class="avis">Avis des clients</h3>
+            <div class="commentaire">
+                <h4>John Doe</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </section>
+        <section id="rendez-vous">
+            <h1>Prends rendez-vous</h1>
+            <form>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" class="nom" placeholder="Nom">
+                <label for="date">Date</label>
+                <input type="date" id="date" class="date">
+                <label for="time">Heure</label>
+                <input type="time" id="time" class="heure">
+                <fieldset>
+                    <legend>Lieu</legend>
+                    <input type="radio" id="surPlace" name="lieu" value="PLACE">
+                    <label for="surPlace">Sur place</label>
+                    <input type="radio" id="aDomicile" name="lieu" value="DOMICILE">
+                    <label for="aDomicile">A domicile</label>
+                </fieldset>
+                <button type="submit">Confirmer</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
